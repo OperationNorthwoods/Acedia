@@ -76,6 +76,9 @@ h1 {
     font-family: 'Updock', cursive !important;
     margin: 0px;
     background-color: blueviolet;
+    display: flex;
+    align-items: center;
+    justify-content:
 }
 
 .item-2 {
