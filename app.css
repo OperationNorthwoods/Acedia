@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+button:hover {
+    cursor: pointer
+}
+
 html {
     font-size: 10px;
     font-family: 'Spartan', sans-serif;
@@ -13,21 +17,10 @@ html {
 
 
 body {
-    /* display: flex; */
-    /* align-self: flex-start;
-    flex-direction: column; */
     background-color: orangered;
     width: 600px;
     margin: 0 auto;
     /* padding: 20px; */
-}
-
-p {
-    font-size: large;
-    color: red;
-    font-size: 3em;
-    font-weight: 300;
-    margin: 5px;
 }
 
 h1 {
@@ -37,6 +30,19 @@ h1 {
     background-color: blueviolet;
     color: goldenrod;
     text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+p {
+    font-size: large;
+    color: red;
+    font-size: 3em;
+    font-weight: 300;
+    margin: 5px;
 }
 
 .bg-card {
@@ -51,4 +57,27 @@ h1 {
 .gaming-data {
     display: flex;
     justify-content: space-evenly;
+}
+
+@media only screen and (min-width: 500px){
+    body {
+        width: 400px;
+    }
+
+    h1 {
+        font-size: 3em;
+    }
+}
+
+/* Tablet portrait */
+@media only screen and (min-width: 800px) {
+}
+
+/* Tablet landscape */
+@media only screen and (min-width: 1000px) {
+}
+
+/* Desktop */
+@media only screen and (min-width: 1200px) {
+    /* Styles for screens larger than 992px */
 }
