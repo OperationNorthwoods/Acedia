@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+{% block title %}Home{% endblock %}
+
+
+{% block content %}
+<main class="bg-card">
+
+    <h1>Acedia</h1>
+    <nav></nav>
+
+    <section class="mission-statement">
+        <p id="first-p">The latin word meaning sloth of the mind or body</p>
+        <p id="second-p">I created this site to limit my rampant steam hours growth.</p>
+        <p id="third-p">This website grew out of my <br>
+            desire to make a fullstack website <br>
+            for a portfolio project. </p>
+    </section>
+
+    <br>
+
+    <section class="data-entry">
+        <br>
+        <br>
+        <form>
+            <input type="text" id="vanity-input" placeholder="gaben"> <input type="submit" value="Submit">
+        </form>
+        <p id="vanity-explained">Please enter your <span class="highlight">Steam Vanity URL</span> above<br>
+            This is the text that appears in between<span class="highlight2">** **</span> below<br>
+            You can find this by visiting your Steam profile in a web browser</p>
+        <p id="vanity-example"><span class="highlight3">Example:</span> https://steamcommunity.com/id/<span
+                class="highlight2">**gaben**</span></p>
+        <br>
+        <br>
+    </section>
+
+    <br>
+
+    <section class="gaming-data">
+        <div class="data" id="data-1">past 24 hours
+            <div> additional (number) hours </div>
+            <div> top game: (game) </div>
+            <div></div>
+        </div>
+
+        <p></p>
+
+        <div class="data" id="data-2"> Past Week
+            <div> additional (number) hours </div>
+            <div> top game: (game) </div>
+            <div> </div>
+        </div>
+
+        <p></p>
+
+        <div class="data" id="data-3"> Past Month
+            <div> additional (number) hours </div>
+            <div> top game: (game) </div>
+            <div> </div>
+        </div>
+    </section>
+    <br>
+
+</main>
+{% endblock %}
+
+
+{% block footer %}Created by Calvin Johnson{% endblock %}

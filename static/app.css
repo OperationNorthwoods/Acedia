@@ -24,7 +24,7 @@ html {
     width: 100vw;
     background-color: var(--light);
     /* Background Image below */
-    background-image: url(Images/fire-bottom-seamless.jpg);
+    background-image: url(./images/fire-bottom-seamless.jpg);
     background-size: cover;
     background-position: center;
 }

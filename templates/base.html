@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %} - Acedia</title>
+
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="static/favicon.ico">
+    <link rel="shortcut-icon" type="image/x-icon" href="static/favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- font-family: 'Spartan', sans-serif; place font in code -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Updock&display=swap" rel="stylesheet">
+
+    <!-- font-family: 'Updock', cursive; -->
+
+    <link rel="stylesheet" href="static/app.css">
+</head>
+
+<body>
+{% block content %}{% endblock %}
+</body>
+
+<footer>{% block footer %}{% endblock %}</footer>
+
+</html>
