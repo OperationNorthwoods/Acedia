@@ -21,7 +21,11 @@
     <section class="data-entry">
         <br>
         <br>
-        <form>
+        <!-- <form action="{{ url_for('search_user') }}">
+        </form> -->
+        <form method="POST" action="{{ url_for('submit') }}">
+            {{ form.csrf_token }}
+            {{ form.name.label }} {{ form.name(size=20) }}
             <input type="text" id="vanity-input" placeholder="gaben"> <input type="submit" value="Submit">
         </form>
         <p id="vanity-explained">Please enter your <span class="highlight">Steam Vanity URL</span> above<br>
@@ -64,4 +68,3 @@
 {% endblock %}
 
 
-{% block footer %}Created by Calvin Johnson{% endblock %}

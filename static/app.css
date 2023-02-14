@@ -47,6 +47,17 @@ h1 {
     text-align: center;
 }
 
+h2 {
+    font-size: 7vh;
+        text-align: center;
+}
+
+h3 {
+font-size: 5vh;
+    text-align: center;
+}
+
+
 nav {
     display: flex;
     justify-content: space-evenly;
