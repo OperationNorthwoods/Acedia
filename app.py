@@ -1,5 +1,5 @@
 import os
-from flask import Flask, render_template
+from flask import Flask, render_template, redirect
 from config import API_KEY
 from markupsafe import escape
 import requests
@@ -21,7 +21,7 @@ class SteamSearch(FlaskForm):
 def submit():
     form = SteamSearch()
     if form.validate_on_submit():
-        return render_template('/results.html')
+        return redirect('/results.html')
     return render_template('index.html', form=form)
 
 @app.route('/results')

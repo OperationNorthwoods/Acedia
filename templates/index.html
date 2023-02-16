@@ -21,8 +21,6 @@
     <section class="data-entry">
         <br>
         <br>
-        <!-- <form action="{{ url_for('search_user') }}">
-        </form> -->
         <form method="POST" action="{{ url_for('submit') }}">
             {{ form.csrf_token }}
             {{ form.name.label }} {{ form.name(size=20) }}
